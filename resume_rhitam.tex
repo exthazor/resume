@@ -1,0 +1,225 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{scrextend}
+
+%\usepackage{showframe} % debugging use only
+
+\geometry{
+  letterpaper,
+  left = 0.6in,
+  right = 0.6in,
+  top = 0.5in,
+  bottom = 0.35in
+}
+
+\hypersetup{
+  colorlinks = true, 
+  linkcolor = blue, 
+  urlcolor  = blue,
+  citecolor = blue, 
+  anchorcolor = blue
+}
+
+%   CUSTOM STYLES  %
+\thispagestyle{empty} % remove page number
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+%   MACROS  %
+\newcommand{\sectionStart}{
+  \begin{itemize}[label={},leftmargin=0in]
+}
+\newcommand{\sectionEnd}{
+  \end{itemize}
+}
+\newcommand{\head}[7]{
+  \noindent
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \centerline{
+      \textbf{\href{#1}{\color{blue}{\LARGE {\underline{#2}}}}}
+    }
+    \vspace{5pt}\\
+    \centerline{
+      \href{mailto:#3}{\underline{#3}} $\mid$
+      #4 $\mid$
+       \href{#5}{\underline{Github}} $\mid$
+       \href{#6}{\underline{LinkedIn}} $\mid$
+       \href{#7}{\underline{Itch.io}}
+    }
+  \end{tabular*}
+  \vspace{-10pt}
+}
+\newcommand{\summaryText}[1]{
+  \item
+  \begin{addmargin}[7pt]{0pt}
+    {#1}
+  \end{addmargin}
+}
+\newcommand{\educationItem}[5]{
+  \vspace{-1pt}
+  \item
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r@{}}
+    {#1 in \textbf{#2}}  & {#3}\\
+    {\textit{#4}} & {#5}\\\vspace{-18pt}
+  \end{tabular*}
+  \vspace{-5pt}
+}
+\newcommand{\skillItem}[2]{
+  \vspace{-1pt}
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{}l@{}}
+    {\textbf{#1}: } & {#2}
+  \end{tabular*}\vspace{-17pt}
+}
+\newcommand{\jobHeading}[3]{
+  \vspace{-1pt}
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r@{}}
+    \normalsize{\textbf{#1}} & #2 \\
+    \textit{\small#3} \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\projectHeading}[4]{
+  \vspace{-1pt}
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r@{}}
+    \normalsize{{\href{#1}{#2}} \textbf{#3}} & #4 \\
+  \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\listStart}{\begin{itemize}}
+\newcommand{\listEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\bulletItem}[1]{
+  \item
+  \small{
+    {#1 \vspace{-1.8pt}}
+  }
+}
+
+\begin{document}
+
+%   INTRO   %
+\head
+  {https://rhitamdutta.com/} %1%
+  {Rhitam Dutta} %2%
+  {rhitamdutta1996@gmail.com} %3%
+  {+91 7019679084} %4%
+  {https://github.com/exthazor} %5%
+  {https://www.linkedin.com/in/rhitam-dutta} %6%
+  {https://www.capt-entropy.itch.io} %7%
+
+
+%   SUMMARY   %
+\section{Summary}
+\sectionStart
+  \summaryText
+  {Experienced AWS Certified Developer and Software Engineer in Health Information Technology, Web Development, Cloud Computing, Game Development, and Big Data Analytics.}
+\sectionEnd
+
+%   EXPERIENCE   %
+\section{Experience}
+\sectionStart
+  \jobHeading
+    {Software Engineer}
+    {August 2020 - now}
+    {Cerner Corporation | Cardiology Department}
+  \listStart
+    \bulletItem
+    {Helped transfer critical patient data across various departments in Cerner by implementing Java service calls and API(s).}
+    \bulletItem
+    {Responsible for adding new functionality for Cerner proprietary EMR solution “Powerchart” that enabled doctors to declare a study attached to a medical procedure as matched in error. Before the inerror functionality, procedures had to be cancelled and initiated again. Technologies used included Visual C++, Java, and Oracle. }
+   \bulletItem
+    {Updated and deployed proprietary Maven dependencies used across Cerner to decrease vulnerability and increase security.}
+   \bulletItem
+   {Automated testing using Eggplant for various workflows.}
+   \listEnd
+  \jobHeading
+    {Software Intern} 
+    {January 2020 - July 2020}
+    {Cerner Corporation | Radiology Department}
+  \listStart
+    \bulletItem
+    {Developed a mini multilingual hospital portal system using Spring MVC and Hibernate. Parts of it were integrated into the EHR known as Cerner Millennium.}
+  \listEnd
+  \jobHeading
+    {Web Analyst Intern} 
+    {May 2019 - June 2019}
+    {National Informatics Centre}
+  \listStart
+    \bulletItem
+    {Enabled enhanced server logging of various government websites for web traffic analysis by developing custom scripts using PHP and MySQL.}
+  \listEnd
+\sectionEnd
+
+%   PROJECTS   %
+\section{Projects}
+\sectionStart
+  \projectHeading
+    {https://rhitamdutta.com/coaching/}
+    {Rhitam Dutta Online Coaching}
+    {(Django, Vanilla JavaScript, Amazon Web Services)}
+    {August 2020}
+  \listStart
+    \bulletItem
+      {As the pandemic worsened in India and gyms shut down, I built an online coaching platform on top of my portfolio website that allowed me to help people from all around the world be strong, physically fit, and healthy. A receipt gets generated after a successful purchase and my team contacts the client for further communication.}
+  \listEnd
+  \projectHeading
+    {https://github.com/exthazor/angel}
+    {Angel Bot}
+    {(Discord.js, Discord-Akairo, TypeScript)}
+    {May 2020}
+  \listStart
+    \bulletItem
+    {Angel is a self-made, open-source, all-encompassing Discord bot that does everything from managing users to entertaining them with sardonic quips. Equipped with numerous functionalities, it continues to be used by an ever-increasing number of server administrators and moderators everyday.}
+  \listEnd
+  \projectHeading
+    {https://drive.google.com/file/d/12v8wYAPJ4aZ6rGTGNL5RerHWSN13arj5/view?usp=sharing}
+    {Weather Data Analyzer and Forecaster}
+    {(Hadoop and Map Reduce)}
+    {January 2017 - April 2017}
+  \listStart
+    \bulletItem
+      {The project takes in weather data from NCDC (National Climatic Data Center) and loads it into Apache Pig. Hive processes the data using MapReduce and performs parallel key operations to analyze the days and categorize the weather based on hot or cold days. Then, on each data chunk it performed K nearest neighbor and the mean to predict the future weather data.}
+  \listEnd
+  \projectHeading
+    {}
+    {Malaria Image Classifier}
+    {(ResNet)}
+    {April 2015 - June 2015}
+  \listStart
+    \bulletItem
+      {To help combat the epidemic of malaria in Assam, I developed a malaria image classifier employing a premade ResNet, which was used to classify blood smear samples on whether the blood was malaria-infected or not. The model was 93\%\ accurate from data on the NIH Website.}
+  \listEnd
+\sectionEnd
+
+%   SKILLS   %
+\section{Technical Skills}
+\sectionStart
+  \skillItem
+    {Languages}
+    {Python, C/C++, Java, TypeScript (ES6), C\#, SQL, Unix}
+  \skillItem
+    {Frameworks}
+    {Django, Spring, Hibernate, Docker, TensorFlow, Flutter, Hadoop, Bootstrap, .NET, Node, React}
+  \skillItem
+    {Tools}
+    {Amazon AWS, Unity Game Engine, Photoshop, Illustrator, Heroku, DigitalOcean, Bash, Git, \LaTeX\ }
+  \vspace{3pt}
+\sectionEnd
+
+%   EDUCATION   %
+\section{Education}
+\sectionStart
+  \educationItem
+    {Bachelor of Technology} 
+    {Information Technology} 
+    {August 2016 - June 2020}
+    {Manipal Institute of Technology} 
+    {Minor in Big Data}
+\sectionEnd
+
+\end{document}

@@ -1,6 +1,3 @@
-git add README.md
-ect Preview]
-
 This LaTeX resume design is based off Sourabh Bajaj's '[Software Developer Resume](https://github.com/sb2nov/resume)'. It is also the seventh revision of my personal resume.
 
 In my old resumes, I used Microsoft Word to format my resume. Sure, it was easy to update once I formatted the different sections correctly. But the problem arises when updating the resume for job applications which require some projects to be included and some to be dismissed. Also, Word's export to pdf is not always the quickest thing in the world.

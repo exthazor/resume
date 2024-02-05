@@ -13,7 +13,7 @@
   left = 0.6in,
   right = 0.6in,
   top = 0.2in,
-  bottom = 0.1in
+  bottom = 0.0in
 }
 
 \hypersetup{
@@ -37,7 +37,7 @@
 \newcommand{\sectionEnd}{
   \end{itemize}
 }
-\newcommand{\head}[7]{
+\newcommand{\head}[6]{
   \noindent
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     \centerline{
@@ -48,8 +48,7 @@
       \href{mailto:#3}{\underline{#3}} $\mid$
       #4 $\mid$
        \href{#5}{\underline{Github}} $\mid$
-       \href{#6}{\underline{LinkedIn}} $\mid$
-       \href{#7}{\underline{Itch.io}}
+       \href{#6}{\underline{LinkedIn}}
     }
   \end{tabular*}
   \vspace{-10pt}
@@ -100,7 +99,11 @@
   }
 }
 \newcommand{\certItem}[2]{
-  \item \footnotesize{\textbf{#1} #2} \vspace{-10pt}
+  \vspace{-1pt}
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{}l@{}}
+    \footnotesize{\textbf{#1}: } & \footnotesize{#2}
+  \end{tabular*}\vspace{-22pt}
 }
 \begin{document}
 
@@ -112,8 +115,6 @@
   {+91 7019679084} %4%
   {https://github.com/exthazor} %5%
   {https://www.linkedin.com/in/rhitam-dutta} %6%
-  {https://www.capt-entropy.itch.io} %7%
-
 
 %   SUMMARY   %
 \section{Summary}
@@ -216,9 +217,9 @@
 \section{Certifications \& Achievements}
 \sectionStart
     \certItem 
-     {AWS Certified Developer - Associate:} {Proficient in developing, deploying, and debugging cloud-based applications using AWS.}
+     {AWS Certified Developer Associate} {Proficient in AWS-based application lifecycle management.}
     \certItem 
-     {Powerlifting Medalist:} {Secured a silver medal in 3rd PRO National Squat Championship, 2022.}
+     {Powerlifting Medalist} {Secured a silver medal in 3rd PRO National Squat Championship, 2022.}
 \sectionEnd
 
 

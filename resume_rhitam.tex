@@ -10,8 +10,8 @@
 
 \geometry{
   letterpaper,
-  left = 0.6in,
-  right = 0.6in,
+  left = 0.2in,
+  right = 0.2in,
   top = 0.2in,
   bottom = 0.0in
 }
@@ -116,13 +116,6 @@
   {https://github.com/exthazor} %5%
   {https://www.linkedin.com/in/rhitam-dutta} %6%
 
-%   SUMMARY   %
-\section{Summary}
-\sectionStart
-  \summaryText
-  {Experienced Software Development Engineer with 3+ years in Backend Development, AWS, and System Architecture. I deliver scalable, secure solutions that drive system performance and exceed business objectives.}
-\sectionEnd
-
 %   EXPERIENCE   %
 \section{Experience}
 \sectionStart
@@ -132,38 +125,30 @@
     {Wint Wealth | Backend Team}
   \listStart
     \bulletItem
-    {Integrated Two Factor Authentication (2FA) which led to a more robust defense against unauthorised access -- markedly improved user trust and compliance with emerging SEBI standards.}
+    {Architected and executed the first-ever \textbf{Two Factor Authentication (2FA)} system for our Web and Mobile Apps, a move that effectively \textbf{eliminated security breaches}. This was a significant upgrade from the previous system where OTPs were managed by third-party vendors. I introduced an innovative approach of using Redis for temporary OTP storage. This led to a \textbf{90\% reduction in login issue tickets} and ensured our \textbf{platform’s compliance with SEBI security standards}. Today, my 2FA APIs are a cornerstone of our security infrastructure, serving \textbf{50,000+ active users per month}.}
+\bulletItem
+    {Developed the \textbf{SIM Binding protocol} for our platform, enhancing security by verifying SIM ownership. This was crucial for the Unity FD product, launched in December 2023. The protocol has enabled \textbf{200+ users} to securely purchase Unity FDs, generating \textbf{1.5+ lakh rupees in revenue}.}
     \bulletItem
-    {Spearheaded the integration of Strapi CMS, streamlining content management and deployment. This pivotal move enabled near-instant content updates across the platform, catalysing SEO growth.}
-   \bulletItem
-    {Launched Fixed Deposit referral program and revamped pre-existing bond referral program, awarding referrers a percentage of transactions, which markedly fueled user growth and engagement.}
+    {Led the Strapi CMS integration into Wint's AWS infrastructure, transforming content management. Previously, updates to texts, colours, and SEO keywords were manually deployed by frontend engineers. I configured AWS's VPC, Route Tables, Internet Gateway, NAT Gateway, EC2, Elastic Beanstalk, CDN, S3, and RDS together to form a comprehensive Wint CMS powered by open source Strapi that enabled instant updates to textual information at both website and apps. Strapi APIs currently garner \textbf{100,000+ monthly reach} and showcased its value when a poorly visible modal in the bond referral version 3 was \textbf{redesigned and launched within an hour}, \textbf{boosting user interaction by 65\%}.}
+ \bulletItem
+    {Revamped Wint's bond referral program to version 3 in July 2023, enabling automatic distribution of earnings to referrers based on referees' bond interest repayment schedule. Leveraged AWS SNS, SQS, Lambda, Step Functions, and Razorpay X APIs to automate and streamline the repayment process, ensuring timely and accurate rewards. This strategic update attracted \textbf{40,000+ new customers} and generated \textbf{5+ crores of rupees in revenue to date}.}
+ \bulletItem
+    {Debugged and resolved a persistent issue in the Clevertap tracking platform, where user email IDs were being erroneously mixed. Approximately \textbf{4,000 users received emails about bond repayments they had not purchased}. By implementing a 2-minute delay in the tracking code through strategic use of SQS and Lambda functions, I effectively corrected the error.}
    \listEnd
   \jobHeading
-    {Software Engineer}
+    {Software Development Engineer}
     {August 2020 - February 2022}
     {Cerner Corporation | Cardiology Department}
   \listStart
     \bulletItem
-    {Streamlined Cerner's Powerchart EMR workflows by developing a feature in Visual C++ and Oracle for correcting study mismatches without procedure restarts, enhancing clinical efficiency. }
+    {Streamlined Cerner's Powerchart EMR workflows by developing a feature in Visual C++ and Oracle for correcting medical study mismatches without procedure restarts, enhancing clinical efficiency. }
+ \bulletItem
+    {Implemented the "inerror" datatype across both frontend (Visual C++) and backend (Java) components of Cerner's patient APIs. This involved adding a new field to accurately mark and handle patient data.}
+ \bulletItem
+    {Upgraded and deployed numerous proprietary Maven dependencies. }
    \bulletItem
    {Automated testing using Eggplant for various workflows.}
    \listEnd
-  \jobHeading
-    {Software Intern} 
-    {January 2020 - July 2020}
-    {Cerner Corporation | Radiology Department}
-  \listStart
-    \bulletItem
-    {Developed a multilingual hospital portal, parts of which were integrated into Cerner Millennium's EHR, enhancing patient data management and accessibility.}
-  \listEnd
-  \jobHeading
-    {Web Analyst Intern} 
-    {May 2019 - June 2019}
-    {National Informatics Centre}
-  \listStart
-    \bulletItem
-    {Enabled enhanced server logging of various government websites for web traffic analysis by developing custom scripts using PHP and MySQL.}
-  \listEnd
 \sectionEnd
 
 %   PROJECTS   %
@@ -176,7 +161,7 @@
     {January 2023}
   \listStart
     \bulletItem
-      {Engineered a robust and user-friendly hotel booking system for Cherry City Cottage, a renowned hospitality establishment in Guwahati. This comprehensive platform revolutionizes the guest experience by facilitating seamless room bookings, discovery of local attractions, dining reservations, and secure online payments.}
+      {Engineered a robust and user-friendly hotel booking system for Cherry City Cottage, a renowned hospitality establishment in Guwahati.}
   \listEnd
   \projectHeading
     {https://github.com/exthazor/rhitamdutta/}
@@ -185,7 +170,7 @@
     {August 2020}
   \listStart
     \bulletItem
-      {In response to the global pandemic's gym closures, I developed an innovative online coaching platform. This platform, integrated into my portfolio website, leverages my fitness expertise to address the growing inaccessibility of health and fitness resources. It promotes health and fitness worldwide and includes features like automated receipt generation and client communication post-purchase for a smooth user experience.}
+      {In response to the pandemic, I launched an online coaching platform integrated into my website, providing a one-stop solution for fitness -- offering a variety of features to ensure a seamless and comprehensive fitness journey.}
   \listEnd
   \projectHeading
     {https://github.com/exthazor/angel}
@@ -194,7 +179,7 @@
     {May 2020}
   \listStart
     \bulletItem
-    {Designed and built Angel, a versatile and engaging Discord bot. This open-source project offers a wide range of functionalities from user management to entertainment. Angel is enhancing user engagement and community management across several servers.}
+    {Designed and built Angel, a versatile and engaging Discord bot. This open-source is enhancing user engagement and community management across several servers.}
   \listEnd
 \sectionEnd
 

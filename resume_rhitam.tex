@@ -12,8 +12,8 @@
   letterpaper,
   left = 0.6in,
   right = 0.6in,
-  top = 0.5in,
-  bottom = 0.35in
+  top = 0.2in,
+  bottom = 0.1in
 }
 
 \hypersetup{
@@ -57,15 +57,15 @@
 \newcommand{\summaryText}[1]{
   \item
   \begin{addmargin}[7pt]{0pt}
-    {#1}
+    \small{#1}
   \end{addmargin}
 }
 \newcommand{\educationItem}[5]{
   \vspace{-1pt}
   \item
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r@{}}
-    {#1 in \textbf{#2}}  & {#3}\\
-    {\textit{#4}} & {#5}\\\vspace{-18pt}
+    \footnotesize{#1 in \textbf{#2}}  & \footnotesize{#3}\\
+    \footnotesize{\textit{#4}} & \footnotesize{#5}\\\vspace{-5pt}
   \end{tabular*}
   \vspace{-5pt}
 }
@@ -100,13 +100,13 @@
   }
 }
 \newcommand{\certItem}[2]{
-  \item \footnotesize{\textbf{#1} #2} \vspace{-18pt}
+  \item \footnotesize{\textbf{#1} #2} \vspace{-10pt}
 }
 \begin{document}
 
 %   INTRO   %
 \head
-  {https://rhitamdutta.com/portfolio/} %1%
+  {https://rhit.am/portfolio/} %1%
   {Rhitam Dutta} %2%
   {rhitamdutta1996@gmail.com} %3%
   {+91 7019679084} %4%
@@ -175,7 +175,7 @@
     {October 2023}
   \listStart
     \bulletItem
-      {Engineered a robust and user-friendly hotel booking system for Cherry City Cottage, a renowned hospitality establishment. This comprehensive platform revolutionizes the guest experience by facilitating seamless room bookings, discovery of local attractions, dining reservations, and secure online payments.}
+      {Engineered a robust and user-friendly hotel booking system for Cherry City Cottage, a renowned hospitality establishment in Guwahati. This comprehensive platform revolutionizes the guest experience by facilitating seamless room bookings, discovery of local attractions, dining reservations, and secure online payments.}
   \listEnd
   \projectHeading
     {https://github.com/exthazor/rhitamdutta/}
@@ -184,7 +184,7 @@
     {August 2020}
   \listStart
     \bulletItem
-      {In response to the global pandemic, I conceptualized and developed an innovative online coaching platform. This platform, integrated into my portfolio website, leverages my expertise as a strength coach to promote health and fitness worldwide. It features an automated receipt generation and client communication system post-purchase.}
+      {In response to the global pandemic's gym closures, I developed an innovative online coaching platform. This platform, integrated into my portfolio website, leverages my strength coaching expertise to address the growing inaccessibility of health and fitness resources. It promotes health and fitness worldwide and includes features like automated receipt generation and client communication post-purchase for a smooth user experience.}
   \listEnd
   \projectHeading
     {https://github.com/exthazor/angel}
@@ -193,7 +193,7 @@
     {May 2020}
   \listStart
     \bulletItem
-    {Designed and built Angel, a versatile and engaging Discord bot. This open-source project, developed using Discord.js and TypeScript, offers a wide range of functionalities from user management to entertainment. Angel is currently being utilized by a growing number of Discord server administrators and moderators, enhancing user engagement and community management.}
+    {Designed and built Angel, a versatile and engaging Discord bot. This open-source project, developed using Discord.js and TypeScript, offers a wide range of functionalities from user management to entertainment. Angel is currently being utilised by a number of Discord server administrators and moderators, enhancing user engagement and community management.}
   \listEnd
 \sectionEnd
 

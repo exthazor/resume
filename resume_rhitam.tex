@@ -100,6 +100,10 @@
   }
 }
 
+\newcommand{\certItem}[2]{
+  \item \textbf{#1} \small{#2}
+}
+
 \begin{document}
 
 %   INTRO   %
@@ -117,23 +121,31 @@
 \section{Summary}
 \sectionStart
   \summaryText
-  {AWS Certified Developer Associate and Software Engineer with over two years of experience in Cloud Computing, Web Development, and Health Information Technology. Seeking to leverage strong leadership and software development skills to increase profitability for The Goldman Sachs Group, Inc.}
+  {Experienced Software Development Engineer with 3+ years in Backend Development, AWS, and System Architecture, delivering scalable, secure solutions that drive system performance and exceed business objectives.}
 \sectionEnd
 
 %   EXPERIENCE   %
 \section{Experience}
 \sectionStart
+ \jobHeading
+    {Software Development Engineer}
+    {March 2022 - now}
+    {Wint Wealth | Backend Team}
+  \listStart
+    \bulletItem
+    {Integrated Two Factor Authentication (2FA) which led to a more robust defense against unauthorised access -- markedly improved user trust and compliance with emerging SEBI standards.}
+    \bulletItem
+    {Drove the integration of Strapi CMS, optimising content management and deployment. It was instrumental in enabling almost instantaneous content updates across the platform.}
+   \bulletItem
+    {Launched FD referral and revamped bond referral programs, awarding referrers a percentage of transactions, which markedly fueled user growth and engagement.}
+   \listEnd
   \jobHeading
     {Software Engineer}
-    {August 2020 - now}
+    {August 2020 - February 2022}
     {Cerner Corporation | Cardiology Department}
   \listStart
     \bulletItem
-    {Helped transfer critical patient data across various departments in Cerner by implementing Java service calls and API(s).}
-    \bulletItem
-    {Responsible for adding new functionality for Cerner proprietary EMR solution “Powerchart” that enabled doctors to declare a study attached to a medical procedure as matched in error. Before the inerror functionality, procedures had to be cancelled and initiated again. Technologies used included Visual C++, Java, and Oracle. }
-   \bulletItem
-    {Updated and deployed proprietary Maven dependencies used across Cerner to decrease vulnerability and increase security.}
+    {Streamlined Cerner's Powerchart EMR workflows by developing a feature in Visual C++ and Oracle for correcting study mismatches without procedure restarts, enhancing clinical efficiency. }
    \bulletItem
    {Automated testing using Eggplant for various workflows.}
    \listEnd
@@ -143,7 +155,7 @@
     {Cerner Corporation | Radiology Department}
   \listStart
     \bulletItem
-    {Developed a mini multilingual hospital portal system using Spring MVC and Hibernate. Parts of it were integrated into the EHR known as Cerner Millennium.}
+    {Developed a multilingual hospital portal, parts of which were integrated into Cerner Millennium's EHR, enhancing patient data management and accessibility.}
   \listEnd
   \jobHeading
     {Web Analyst Intern} 
@@ -158,14 +170,23 @@
 %   PROJECTS   %
 \section{Projects}
 \sectionStart
+\projectHeading
+    {https://github.com/exthazor/CherryCityCottage-Frontend/}
+    {Hotel Booking System}
+    {(Strapi, Tailwind, Amazon Web Services)}
+    {October 2023}
+  \listStart
+    \bulletItem
+      {Engineered a robust and user-friendly hotel booking system for Cherry City Cottage, a renowned hospitality establishment. This comprehensive platform revolutionizes the guest experience by facilitating seamless room bookings, discovery of local attractions, dining reservations, and secure online payments.}
+  \listEnd
   \projectHeading
-    {https://rhitamdutta.com/coaching/}
+    {https://github.com/exthazor/rhitamdutta/}
     {Rhitam Dutta Online Coaching}
     {(Django, Vanilla JavaScript, Amazon Web Services)}
     {August 2020}
   \listStart
     \bulletItem
-      {As the pandemic worsened in India and gyms shut down, I built an online coaching platform on top of my portfolio website that allowed me to help people from all around the world be strong, physically fit, and healthy through my experience as a strength coach. A receipt gets sent after a successful purchase and my team contacts the client for further communication.}
+      {In response to the global pandemic, I conceptualized and developed an innovative online coaching platform. This platform, integrated into my portfolio website, leverages my expertise as a strength coach to promote health and fitness worldwide. It features an automated receipt generation and client communication system post-purchase.}
   \listEnd
   \projectHeading
     {https://github.com/exthazor/angel}
@@ -174,16 +195,7 @@
     {May 2020}
   \listStart
     \bulletItem
-    {Angel is a self-made, open-source, all-encompassing Discord bot that does everything from managing users to entertaining them with sardonic quips. Equipped with numerous functionalities, it continues to be used by an ever-increasing number of server administrators and moderators everyday.}
-  \listEnd
-  \projectHeading
-    {https://drive.google.com/file/d/12v8wYAPJ4aZ6rGTGNL5RerHWSN13arj5/view?usp=sharing}
-    {Weather Data Analyzer and Forecaster}
-    {(Hadoop and Map Reduce)}
-    {January 2017 - April 2017}
-  \listStart
-    \bulletItem
-      {As there is an ever-increasing need for designing system architecture that helps to predict weather forecast, I built a weather analyser and forecaster. It takes in weather data from NCDC (National Climatic Data Center) and loads it into Apache Pig. Hive processes the data and performs parallel key operations to categorize the weather based on hot or cold days. Then, on each data chunk it performed K nearest neighbor to predict the future weather data.}
+    {Designed and built Angel, a versatile and engaging Discord bot. This open-source project, developed using Discord.js and TypeScript, offers a wide range of functionalities from user management to entertainment. Angel is currently being utilized by a growing number of Discord server administrators and moderators, enhancing user engagement and community management.}
   \listEnd
 \sectionEnd
 
@@ -192,15 +204,25 @@
 \sectionStart
   \skillItem
     {Languages}
-    {Java, Python, C/C++, TypeScript (ES6), C\#, SQL, Unix}
+    {Kotlin, Python, Java, Javascript, C\#, PostgreSQL, Dart, Unix}
   \skillItem
     {Frameworks}
-    {Django, Spring, Hibernate, Docker, TensorFlow, Flutter, Hadoop, Bootstrap, .NET, Node, React}
+    {Spring Boot, Django, Express.js, Flutter, Next.js, Tailwind}
   \skillItem
     {Tools}
-    {Amazon AWS, Unity Game Engine, Photoshop, Illustrator, Heroku, DigitalOcean, Bash, Git, \LaTeX\ }
+    {AWS, Git, Jira, Jenkins, Maven, Node.js, Docker, IntelliJ, Visual Studio Code, \LaTeX\ }
   \vspace{3pt}
 \sectionEnd
+
+%   CERTIFICATIONS & ACHIEVEMENTS   %
+\section{Certifications \& Achievements}
+\sectionStart
+    \certItem 
+     {AWS Certified Developer - Associate:} {Proficient in developing, deploying, and debugging cloud-based applications using AWS.}
+    \certItem 
+     {Powerlifting Medalist:} {Secured a silver medal in 3rd PRO National Squat Championship, 2022.}
+\sectionEnd
+
 
 %   EDUCATION   %
 \section{Education}

@@ -73,8 +73,8 @@
   \vspace{-1pt}
   \item
   \begin{tabular*}{1.0\textwidth}{l@{}l@{}}
-    {\textbf{#1}: } & {#2}
-  \end{tabular*}\vspace{-17pt}
+    \footnotesize{\textbf{#1}: } & \footnotesize{#2}
+  \end{tabular*}\vspace{-22pt}
 }
 \newcommand{\jobHeading}[3]{
   \vspace{-1pt}
@@ -88,22 +88,20 @@
   \vspace{-1pt}
   \item
   \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r@{}}
-    \normalsize{{\href{#1}{#2}} \textbf{#3}} & #4 \\
+    \small{{\href{#1}{#2}} \textbf{#3}} & \small{#4} \\
   \end{tabular*}\vspace{-5pt}
 }
 \newcommand{\listStart}{\begin{itemize}}
-\newcommand{\listEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\listEnd}{\end{itemize}\vspace{-6pt}}
 \newcommand{\bulletItem}[1]{
   \item
   \small{
     {#1 \vspace{-1.8pt}}
   }
 }
-
 \newcommand{\certItem}[2]{
-  \item \textbf{#1} \small{#2}
+  \item \footnotesize{\textbf{#1} #2} \vspace{-18pt}
 }
-
 \begin{document}
 
 %   INTRO   %
@@ -173,7 +171,7 @@
 \projectHeading
     {https://github.com/exthazor/CherryCityCottage-Frontend/}
     {Hotel Booking System}
-    {(Strapi, Tailwind, Amazon Web Services)}
+    {(Strapi, Tailwind, AWS)}
     {October 2023}
   \listStart
     \bulletItem
@@ -182,7 +180,7 @@
   \projectHeading
     {https://github.com/exthazor/rhitamdutta/}
     {Rhitam Dutta Online Coaching}
-    {(Django, Vanilla JavaScript, Amazon Web Services)}
+    {(Django, Vanilla JavaScript, AWS)}
     {August 2020}
   \listStart
     \bulletItem
